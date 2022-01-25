@@ -1,0 +1,365 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
+*,
+html {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  font-family: "Poppins", sans-serif;
+  background-color: rgba(255, 255, 255, 0.87);
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header nav {
+  display: block;
+}
+
+header nav ul {
+  visibility: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+}
+
+header nav a {
+  color: white;
+  padding: 5px 20px;
+}
+
+header #Logo {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+header #Logo span {
+  color: white;
+}
+
+header svg {
+  margin-top: -6px;
+  width: 2.3em;
+  margin-top: -0.6em;
+  cursor: pointer;
+}
+
+.hero-img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: url("../Images/shoe1.jpg");
+  background-position-x: 30px;
+  background-position-y: 20px;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  z-index: -10;
+  overflow: hidden;
+}
+
+.hero {
+  position: relative;
+  padding-top: 70px;
+  height: 90vh;
+  overflow: hidden;
+}
+
+.hero h1 {
+  line-height: 55px;
+  font-size: 42px;
+  color: white;
+  padding-bottom: 10px;
+}
+
+.hero .sub_text {
+  width: 350px;
+  line-height: 35px;
+  font-weight: 400;
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.911);
+}
+
+.hero .down_arrow {
+  z-index: 20;
+  stroke: white;
+  position: absolute;
+  left: 28px;
+  bottom: 50px;
+  height: 100px;
+  -webkit-animation-name: arrow;
+          animation-name: arrow;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  z-index: 20;
+}
+
+.hero .down_arrow path {
+  fill: white;
+}
+
+@-webkit-keyframes arrow {
+  0% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  50% {
+    -webkit-transform: translateY(30px);
+            transform: translateY(30px);
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+
+@keyframes arrow {
+  0% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  50% {
+    -webkit-transform: translateY(30px);
+            transform: translateY(30px);
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+
+.More-info {
+  margin-top: 50px;
+}
+
+.More-info .featute {
+  display: -ms-grid;
+  display: grid;
+  padding-bottom: 40px;
+}
+
+.More-info .title {
+  font-weight: bold;
+  font-size: 24px;
+  padding-bottom: 15px;
+}
+
+.More-info .desc {
+  color: #525252;
+  font-size: 16px;
+  line-height: 1.8rem;
+  font-weight: 400s;
+  padding-bottom: 8px;
+}
+
+.More-info img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 16em;
+}
+
+@media only screen and (min-width: 680px) {
+  body {
+    padding: 1.5em 5em;
+    font-family: "Poppins", sans-serif;
+  }
+}
+
+@media only screen and (min-width: 920px) {
+  .menu {
+    display: none;
+  }
+  header nav {
+    display: block;
+  }
+  header nav ul {
+    visibility: visible;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    list-style: none;
+  }
+  header nav a {
+    text-transform: uppercase;
+  }
+  header nav a:hover {
+    text-decoration: underline;
+    color: blanchedalmond;
+  }
+  header #Logo {
+    text-decoration: none;
+    color: #0f0f0f;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  header #Logo span {
+    color: #f30000;
+  }
+  .hero-img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: url("../Images/shoe1.jpg");
+    background-position-x: 30px;
+    background-position-y: 20px;
+    background-size: cover;
+    width: 50%;
+    height: 100vh;
+    z-index: -10;
+    overflow: hidden;
+  }
+  .hero h1 {
+    line-height: 70px;
+    width: 500px;
+    font-weight: 700;
+    font-size: 47px;
+    color: #0c0c0c;
+  }
+  .hero .sub_text {
+    width: 450px;
+    font-size: 20px;
+    color: rgba(34, 34, 34, 0.911);
+  }
+  .hero .down_arrow {
+    stroke: #1a1a1a;
+    position: absolute;
+    left: 18px;
+    bottom: 30px;
+    height: 120px;
+    -webkit-animation-name: arrow;
+            animation-name: arrow;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+    -webkit-animation-delay: 2s;
+            animation-delay: 2s;
+    -webkit-animation-duration: 2s;
+            animation-duration: 2s;
+    -webkit-animation-timing-function: ease-in-out;
+            animation-timing-function: ease-in-out;
+    z-index: 20;
+  }
+  .hero .down_arrow path {
+    fill: #1a1a1a;
+  }
+  @-webkit-keyframes arrow {
+    0% {
+      -webkit-transform: translateY(0px);
+              transform: translateY(0px);
+    }
+    50% {
+      -webkit-transform: translateY(30px);
+              transform: translateY(30px);
+    }
+    100% {
+      -webkit-transform: translateY(0px);
+              transform: translateY(0px);
+    }
+  }
+  @keyframes arrow {
+    0% {
+      -webkit-transform: translateY(0px);
+              transform: translateY(0px);
+    }
+    50% {
+      -webkit-transform: translateY(30px);
+              transform: translateY(30px);
+    }
+    100% {
+      -webkit-transform: translateY(0px);
+              transform: translateY(0px);
+    }
+  }
+  .More-info {
+    margin-top: 180px;
+  }
+  .More-info .featute {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-bottom: 40px;
+  }
+  .More-info .content {
+    width: 50%;
+    padding-right: 90px;
+    text-align: right;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+  .More-info .content-left {
+    width: 50%;
+    padding-left: 90px;
+    text-align: left;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .More-info .title {
+    font-size: 24px;
+  }
+  .More-info .desc {
+    width: 350px;
+    font-size: 16px;
+    line-height: 1.8rem;
+    font-weight: 400s;
+    padding-bottom: 8px;
+  }
+  .More-info img {
+    width: 40%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    height: 16em;
+  }
+}
+/*# sourceMappingURL=main.css.map */

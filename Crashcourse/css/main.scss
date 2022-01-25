@@ -1,0 +1,268 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
+*,
+html {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  position: relative;
+  font-family: "Poppins", sans-serif;
+  background-color: rgba(255, 255, 255, 0.87);
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+}
+a {
+  text-decoration: none;
+}
+header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  nav {
+    display: block;
+
+    ul {
+      visibility: hidden;
+      display: flex;
+      list-style: none;
+    }
+    a {
+      color: white;
+      padding: 5px 20px;
+    }
+  }
+  #Logo {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    span {
+      color: white;
+    }
+  }
+  svg {
+    margin-top: -6px;
+    width: 2.3em;
+    margin-top: -0.6em;
+    cursor: pointer;
+  }
+}
+.hero-img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: url("../Images/shoe1.jpg");
+  background-position-x: 30px;
+  background-position-y: 20px;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  z-index: -10;
+  overflow: hidden;
+}
+.hero {
+  position: relative;
+  padding-top: 70px;
+  height: 90vh;
+  overflow: hidden;
+  h1 {
+    line-height: 55px;
+    font-size: 42px;
+    color: white;
+    padding-bottom: 10px;
+  }
+  .sub_text {
+    width: 350px;
+    line-height: 35px;
+    font-weight: 400;
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.911);
+  }
+  .down_arrow {
+    z-index: 20;
+    stroke: rgb(255, 255, 255);
+    position: absolute;
+    left: 28px;
+    bottom: 50px;
+    height: 100px;
+    animation-name: arrow;
+    animation-iteration-count: infinite;
+    animation-delay: 2s;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    z-index: 20;
+    path {
+      fill: white;
+    }
+    @keyframes arrow {
+      0% {
+        transform: translateY(0px);
+      }
+      50% {
+        transform: translateY(30px);
+      }
+      100% {
+        transform: translateY(0px);
+      }
+    }
+  }
+}
+.More-info {
+  margin-top: 50px;
+  .featute {
+    display: grid;
+    padding-bottom: 40px;
+  }
+  .title {
+    font-weight: bold;
+    font-size: 24px;
+    padding-bottom: 15px;
+  }
+  .desc {
+    color: rgb(82, 82, 82);
+    font-size: 16px;
+    line-height: 1.8rem;
+    font-weight: 400s;
+    padding-bottom: 8px;
+  }
+  img {
+    width: 100%;
+    object-fit: cover;
+    height: 16em;
+  }
+}
+@media only screen and (min-width: 680px) {
+  body {
+    padding: 1.5em 5em;
+    font-family: "Poppins", sans-serif;
+  }
+}
+@media only screen and (min-width: 920px) {
+  .menu {
+    display: none;
+  }
+  header {
+    nav {
+      display: block;
+
+      ul {
+        visibility: visible;
+        display: flex;
+        list-style: none;
+      }
+      a {
+        text-transform: uppercase;
+      }
+      a:hover {
+        text-decoration: underline;
+        color: blanchedalmond;
+      }
+    }
+    #Logo {
+      text-decoration: none;
+      color: rgb(15, 15, 15);
+      font-size: 20px;
+      font-weight: bold;
+      span {
+        color: rgb(243, 0, 0);
+      }
+    }
+  }
+  .hero-img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: url("../Images/shoe1.jpg");
+    background-position-x: 30px;
+    background-position-y: 20px;
+    background-size: cover;
+    width: 50%;
+    height: 100vh;
+    z-index: -10;
+    overflow: hidden;
+  }
+  .hero {
+    h1 {
+      line-height: 70px;
+      width: 500px;
+      font-weight: 700;
+      font-size: 47px;
+      color: rgb(12, 12, 12);
+    }
+    .sub_text {
+      width: 450px;
+      font-size: 20px;
+      color: rgba(34, 34, 34, 0.911);
+    }
+    .down_arrow {
+      stroke: rgb(26, 26, 26);
+      position: absolute;
+      left: 18px;
+      bottom: 30px;
+      height: 120px;
+      animation-name: arrow;
+      animation-iteration-count: infinite;
+      animation-delay: 2s;
+      animation-duration: 2s;
+      animation-timing-function: ease-in-out;
+      z-index: 20;
+      path {
+        fill: rgb(26, 26, 26);
+      }
+      @keyframes arrow {
+        0% {
+          transform: translateY(0px);
+        }
+        50% {
+          transform: translateY(30px);
+        }
+        100% {
+          transform: translateY(0px);
+        }
+      }
+    }
+  }
+  .More-info {
+    margin-top: 180px;
+    .featute {
+      display: flex;
+      padding-bottom: 40px;
+    }
+    .content {
+      width: 50%;
+      padding-right: 90px;
+      text-align: right;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-end;
+    }
+    .content-left {
+      width: 50%;
+      padding-left: 90px;
+      text-align: left;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+    }
+    .title {
+      font-size: 24px;
+    }
+    .desc {
+      width: 350px;
+      font-size: 16px;
+      line-height: 1.8rem;
+      font-weight: 400s;
+      padding-bottom: 8px;
+    }
+    img {
+      width: 40%;
+      object-fit: cover;
+      height: 16em;
+    }
+  }
+}
